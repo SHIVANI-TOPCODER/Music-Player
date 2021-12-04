@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./MusicPlayer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>MusicPlayer-Listen New Songs As Per Your Choice</title>
+    <link rel="icon" href="music-notes.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="body-block">
+        <!-- NAVIGATION BAR -->
+        <div class="nav-bar">
+            <div class="nav-start">
+                <div class="img-head">
+                    <img src="music-notes.png" alt="">
+                </div>
+                <div class="player-name">
+                    Ninja <b>Studio</b>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Favourites</button>
+                    <div class="dropdown-content">
+                        <a href="#">Favourite Songs</a>
+                        <a href="#">Favourite Album</a>
+                        <a href="#">Favourite show</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-end">
+                <div class="search-container">
+                    <form>
+                        <input type="text" name="search" id="search" placeholder="Search..">
+                        <i class="fas fa-microphone" style="position: relative;
+                        left: -50px;
+                        font-size: 21px;
+                        color: #a29a9a;"></i>
+                    </form>
+                </div>
+                <i class="fa fa-bell bell red-dot" style="font-size: 29px; margin-right: 25px;"></i>
+                <i class="fas fa-circle" style="position: relative;
+                color: red;
+                font-size: 11px;
+                bottom: -13px;
+                left: -38px;"></i>
+                <div class="img-bar">
+                    <img src="shiv.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="nav-below">
+            <div class="container">
+                <!--------------- corusel playist------------- -->
+                <div class="crousel">
+                    <div class="crousel-playist">
+                        <img src="crousel1.jpg" alt="img">
+                        <div class="c-overlay">
+                            <i class="far fa-play-circle crousel-icon"></i>
+                        </div>
+                    </div>
+                    <div class="crousel-playist">
+                        <img src="crousel2.jpg" alt="img">
+                        <div class="c-overlay">
+                            <i class="far fa-play-circle crousel-icon"></i>
+                        </div>
+                    </div>
+                    <div class="crousel-playist">
+                        <img src="crousel3.jpg" alt="img">
+                        <div class="c-overlay">
+                            <i class="far fa-play-circle crousel-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------- latest playist------------- -->
+                <div class="latest-playist-media">
+                    <div class="latest-head">
+                        Latest Release
+                    </div>
+                    <div class="latest-playist">
+                        <div class="latest-media">
+                            <a href="jubin.html" class="l-img">
+                                <img src="jubin.jpg" alt="">
+                                <div class="l-overlay">
+                                    <i class="far fa-play-circle crousel-icon" style="font-size: 65px;"></i>
+                                </div>
+                            </a>
+                            <div class="l-name">
+                                <b>Jubin Nautiyal</b>
+                                <p style="color: white; margin-top: 2px;">12 Aug 2021</p>
+                            </div>
+                            <div class="latest-drop">
+                                <i class="fas fa-ellipsis-h dot-icon"></i><br>4:44
+                                <div class="l-content">
+                                    <div class="l-box">Saved playist</div>
+                                    <div class="l-box">All songs</div>
+                                    <div class="l-box">favourites</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="latest-media">
+                            <div class="l-img">
+                                <img src="parak.jpg" alt="">
+                                <div class="l-overlay">
+                                    <i class="far fa-play-circle crousel-icon" style="font-size: 65px;"></i>
+                                </div>
+                            </div>
+                            <div class="l-name">
+                                <b>B Parak</b><br>10 Aug 2001
+                            </div>
+                            <div class="latest-drop">
+                                <i class="fas fa-ellipsis-h dot-icon"></i><br>4:44
+                                <div class="l-content">
+                                    <div class="l-box">Saved playist</div>
+                                    <div class="l-box">All songs</div>
+                                    <div class="l-box">favourites</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="latest-media">
+                            <div class="l-img">
+                                <img src="himesh.jpg" alt="">
+                                <div class="l-overlay">
+                                    <i class="far fa-play-circle crousel-icon" style="font-size: 65px;"></i>
+                                </div>
+                            </div>
+                            <div class="l-name" style="padding: left 2px;">
+                                <b>Himesh Reshamiya</b><br>12 Aug 2021
+                            </div>
+                            <div class="latest-drop">
+                                <i class="fas fa-ellipsis-h dot-icon"></i><br>4:44
+                                <div class="l-content">
+                                    <div class="l-box">Saved playist</div>
+                                    <div class="l-box">All songs</div>
+                                    <div class="l-box">favourites</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="latest-media">
+                            <div class="l-img">
+                                <img src="stebin.jpg" alt="">
+                                <div class="l-overlay">
+                                    <i class="far fa-play-circle crousel-icon" style="font-size: 65px;"></i>
+                                </div>
+                            </div>
+                            <div class="l-name">
+                                <b>Stebin Ben</b><br>12 Aug 2021
+                            </div>
+                            <div class="latest-drop">
+                                <i class="fas fa-ellipsis-h dot-icon"></i><br>4:44
+                                <div class="l-content">
+                                    <div class="l-box">Saved playist</div>
+                                    <div class="l-box">All songs</div>
+                                    <div class="l-box">favourites</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------- popular playist------------- -->
+                <div class="popular-artist">
+                    <div class="latest-head">
+                        Popular Artist
+                    </div>
+                    <div class="artist-block">
+                        <a href="#" class="artist">
+                            <img src="popularartist1.jpg" alt="">
+                            <div class="p-overlay">
+                                <i class="far fa-play-circle crousel-icon" style="font-size: 73px;"></i>
+                            </div>
+                        </a>
+                        <div class="artist">
+                            <img src="popularartist2.jpg" alt="">
+                            <div class="p-overlay">
+                                <i class="far fa-play-circle crousel-icon" style="font-size: 73px;"></i>
+                            </div>
+                        </div>
+                        <div class="artist">
+                            <img src="popularartist3.jpg" alt="">
+                            <div class="p-overlay">
+                                <i class="far fa-play-circle crousel-icon" style="font-size: 73px;"></i>
+                            </div>
+                        </div>
+                        <div class="artist">
+                            <img src="popularartist4.jpg" alt="">
+                            <div class="p-overlay">
+                                <i class="far fa-play-circle crousel-icon" style="font-size: 73px;"></i>
+                            </div>
+                        </div>
+                        <div class="artist">
+                            <img src="popularartist5.jpg" alt="">
+                            <div class="p-overlay">
+                                <i class="far fa-play-circle crousel-icon" style="font-size: 73px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----------------- radio station --------------->
+                <div class="radio-station">
+                    <div class="radio" style="border-radius: 10px;height: 10rem;margin-top: 8px;width: 8rem;">
+                        <div class="r-imgs">
+                            <img src="r1.jpg" alt="">
+                            <div class="r-overlay">
+                                <i class="far fa-play-circle crousel-icon" style="font-size: 73px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="r-img">
+                            <img src="r2.jpg" alt="">
+                            <div class="r-overlay">
+                                <div class="r-name">Love</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="r-img">
+                            <img src="r3.jpg" alt="">
+                            <div class="r-overlay">
+                                <div class="r-name">Retro</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="r-img">
+                            <img src="r8.jpg" alt="">
+                            <div class="r-overlay">
+                                <div class="r-name">Chill</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="r-img">
+                            <img src="r5.jpg" alt="">
+                            <div class="r-overlay">
+                                <div class="r-name">pusup</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="r-img">
+                            <img src="r6.jpg" alt="">
+                            <div class="r-overlay">
+                                <div class="r-name">Rock</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="r-img">
+                            <img src="r7.jpg" alt="">
+                            <div class="r-overlay">
+                                <div class="r-name">Pop</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ---------------ocational music -------------->
+                <div class="ocational">
+                    <div class="ocational-block">
+                        <img src="o1.jpg" alt="">
+                        <div class="centered">Party</div>
+
+                    </div>
+                    <div class="ocational-block">
+                        <img src="o2.jpg" alt="">
+                        <div class="centered">Electronics</div>
+
+                    </div>
+                    <div class="ocational-block">
+                        <img src="o3.jpg" alt="">
+                        <div class="centered">Travelling</div>
+
+                    </div>
+                </div>
+
+                <!------------------ latest english songs--------->
+                <div class="latest-eng">
+                    <div class="latest-head">
+                        Latest English
+                    </div>
+                    <div class="le-block">
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="le1.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>Shape of U</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="le2.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>Senorita</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="le3.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>Taki Taki</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="le4.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>Miammi</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="le5.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>Desoacito</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="le2.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>Sunrise</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------- latest hindi song------------>
+                <div class="latest-eng" style="margin-bottom: 7rem;">
+                    <div class="latest-head">
+                        Latest Devotional
+                    </div>
+                    <div class="le-block">
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="lh1.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>Ganpati Bappa</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="lh2.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>kanha</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="lh3.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>sahed</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="lh4.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>Jejus</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="lh5.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>Mohammad</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                        <div class="le-box">
+                            <div class="le-img">
+                                <img src="lh6.jpg" alt="">
+                                <div class="le-overlay">
+                                    <i class="fas fa-music le-icon"></i>
+                                </div>
+                            </div>
+                            <div class="le-name">
+                                <b>Budha</b><br>
+                                Aug 12, 2012
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="queue">
+                <div id="queue-head">My Playist</div>
+                <div class="queue-down">
+                    <button class="queuebtn">Queue <i class="fa fa-caret-down"
+                            style="font-size: 20px; display: inline;"></i></button>
+                    <div class="queue-content">
+                        <a href="#">Favourites</a>
+                        <a href="#">Saved Playist</a>
+                    </div>
+                </div>
+                <ol type="1" class="media-list">
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m1.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Mirage</b><br>elise</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m2.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Worry Bout Us</b><br>flume</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m3.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Nirage</b><br>klise</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m4.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Kwdrage</b><br>clise</div>
+                        </div>
+                        <i class="far fa-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m5.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Zirage</b><br>rtise</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m1.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Mirage</b><br>Elise</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m1.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Mirage</b><br>Elise</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m6.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Wirage</b><br>dlise</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m1.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Mirage</b><br>sdlise</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m2.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Yerage</b><br>fise</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m2.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Worry</b><br>flume</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m4.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Nirage</b><br>klise</div>
+                        </div>
+                        <i class="far fa-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m1.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Kwrage</b><br>clise</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m4.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Zirage</b><br>rtise</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                    <li class="queue-media">
+                        <div class="heart">
+                            <div class="media-container">
+                                <img src="m1.jpg" alt="img">
+                                <div class="overlay">
+                                    <a href="#" class="icon" title="play">
+                                        <i class="far fa-play-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-name"><b>Mirage</b><br>Elise</div>
+                        </div>
+                        <i class="far fa-heart red-heart"></i>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="play-bar">
+        <div class="play-img">
+            <img src="parak.jpg" alt="">
+        </div>
+        <div class="play-name">
+            <b>baarish</b><br>B Parak
+        </div>
+        <i class="far fa-heart play-icon"></i>
+        <div class="mid-play">
+            <div class="mid-icon">
+                <i class="fas fa-random" style=" color: white; font-size: 27px;"></i>
+                <i class="far fa-play-circle" style=" color: white; font-size: 24px;"></i>
+                <i class="fas fa-sync" style=" color: white; font-size: 21px;"></i>
+            </div>
+            <div class="mid-range">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+        </div>
+        <div class="last-play">
+            <i class="fas fa-volume-up" style="color: white;
+            font-size: 1.5rem;
+            margin: 2rem;"></i>"></i>
+            <input type="range" min="1" max="100" value="50">
+        </div>
+    </div>
+</body>
+
+</html>

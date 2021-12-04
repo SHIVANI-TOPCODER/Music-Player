@@ -1,0 +1,773 @@
+body{
+    background-color: #161632;
+}
+.body-block{
+    /* border: 2px solid white; */
+    margin: 3% 5% 0%;
+    height: auto;
+}
+.nav-bar{
+    width: 100%;
+    height: 68px;
+    /* border: 2px solid white; */
+    display: flex;
+}
+.nav-start{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    /* border: 2px solid rgb(170, 38, 38); */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.img-head img{
+    height: 66px;
+    width: 72px;
+    /* border: 3px solid rgb(207, 5, 5); */
+    margin-right: 4px;
+}
+.player-name{
+    height: 66px;
+    width: 6%;
+    color: white;
+    /* border: 3px solid rgb(207, 5, 5); */
+    font-size: 19px;
+    padding-top: 8px;
+    font-family: cursive;
+    margin-left: 6px;
+}
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+    font-family: cursive;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    text-decoration:underline;
+}
+.nav-end{
+    /* border: 2px solid rgb(170, 38, 38); */
+    position: relative;
+    width: 65%;
+    height: 100%;   
+    display: flex;
+    justify-content: flex-end;
+}
+.img-bar img{
+    height: 67px;
+    width: 70px;
+    border-radius: 50%;
+}
+.bell{
+    font-size: 34px;
+    color: #e3e1e1;
+    margin: 16px;
+}
+input[type=text] {
+    width: 357px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #242b4e;
+    background-image: url(search_icon.png);
+    background-position: 10px 6px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    height: 38px;
+    margin: 16px 17px 2px 40px;
+}
+#search::after{
+   content: '';
+   background-image: url("voice-search.png");
+   background-color: white;
+   height: 2rem;
+   width: 2rem;
+}
+.nav-below{
+    width: 100%;
+    height: 100%;
+    /* border: 4px solid red; */
+    display: flex;
+}
+/* --------------------containing the 70% width of body-block =======================*/
+.container {
+    width: 100%;
+    max-width: 65%;
+    max-height: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content:unset;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    /* border: 4px solid yellow; */
+}
+
+/* ---------queue containing songs---------------- */
+.queue{
+    min-width: 0%;
+    width: 40%;
+    max-height: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content:unset;
+    flex-direction: column;
+    align-items: center;
+    /* border: 4px solid rgb(51, 255, 0); */
+}
+#queue-head{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: -20rem;
+}
+.queue-down{
+    margin-right: -15rem;
+    margin-top: -2rem;
+}
+.queuebtn{
+    background-color:transparent;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-family: cursive;
+}
+.queue-down:hover .queuebtn{
+    color: rgb(220, 220, 220);
+}
+.queue-content{
+    display: none;
+    position: absolute;
+    height: 4.2rem;
+    width: 10rem;
+    /* border: 2px solid #a29c9c; */
+    z-index: 5;
+    background-color: white;
+}
+.queue-down:hover .queue-content{
+    display: block;
+}
+.queue-content a:hover{
+  text-decoration: underline;
+}
+.queuebtn:hover i{
+    color: white;
+}
+.queue-content a{
+    color: #453e3e;
+    padding: 11px 26px;
+    text-decoration: none;
+    display: block;
+    font-family: sans-serif;
+    font-weight: 600;
+    height: 0.7rem;
+    border-bottom: 1px solid #453e3e;
+}
+.media-list{
+    color: white;
+}
+
+.queue-media{
+    height: 3rem;
+    width: 26rem;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: right;
+    margin-bottom: 32px;
+}
+.red-heart:hover{
+    color: red;
+}
+.media-name{
+    color: white;
+    margin-left: 17px;
+    margin-top: 2px;
+    font-family: cursive;
+}
+.media-container img{
+    border-radius: 9px;
+    width: 79px;
+    height: 3rem;
+}
+.media-container{
+    position: relative;
+    width: 100%;
+    max-width: 79px;
+  }
+  
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(46, 43, 43);
+}
+  
+.media-container:hover .overlay {
+opacity: 0.8;
+}
+
+.icon {
+color: white;
+font-size: 33px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+  
+.heart{
+    /* border: 2px solid red; */
+    display: flex;
+    position: relative;
+    width: 70%;
+    height: 100%;
+}
+  /*---------------- playist latest release -------------------*/
+.latest-playist{
+position: relative;
+width: 97%;
+height: auto;
+padding: 11px;
+/* border: 2px solid green; */
+display: flex;
+flex-wrap: wrap;
+}
+.latest-media{
+height: 10rem;
+width: 19rem;
+/* border: 2px solid red; */
+margin: 11px 37px 0px;
+display: flex;
+}
+.latest-playist-media{
+    height: auto;
+    width: 100%;
+    /* border: 4px solid rgb(232, 10, 10); */
+}
+.latest-head{
+color: white;
+height: auto;
+width: 10rem;
+/* border: 2px solid rgb(7, 248, 176); */
+padding: 7px;
+font-family: sans-serif;
+font-size: 21px;
+font-weight: bold;
+}
+.l-img{
+    position: relative;
+    width: 43%;
+    height: 95%;
+}
+.l-img img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* border: 3px solid rgb(238, 250, 2); */
+}
+.l-name{
+height: 3rem;
+width: 8rem;
+/* border: 2px solid red; */
+color: white;
+margin-top: 3rem;
+margin-left: 0.5rem;
+font-family: cursive;
+}
+.latest-drop{
+    height: 2rem;
+    width: 2rem;
+    /* border: 2px solid red; */
+}
+.dot-icon{
+    color: white;
+    padding: 7px;
+    font-size: 18px
+}
+.l-content{
+    display: none;
+    position: relative;
+    top: -1.5rem;
+    height: 6.6rem;
+    width: 10rem;
+    /* border: 2px solid red; */
+    z-index: 1;
+    background-color: whitesmoke;
+    border-radius: 1.1rem;
+}
+.l-box{
+    position: relative;
+    width: 74%;
+    height: 30%;
+    /* border: 2px solid red; */
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    border-bottom: 2px solid gray;
+    padding-left: 38px;
+    font-family: cursive;
+    padding-bottom: 2px;
+    border-radius: 1rem;
+}
+.latest-drop:hover .l-content{
+    display: block;
+}
+.l-box:hover{
+    background-color: rgb(208, 199, 199);
+}
+.l-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    background-color: rgb(46, 43, 43);
+}
+.l-img:hover .l-overlay{
+    opacity: 0.5;
+}
+/*---------------- for crousel div---------------- */
+.crousel{
+    position: relative;
+    width: 100%;
+    height:  15rem;
+    /* border: 4px solid rgb(12, 37, 221); */
+    display: flex;
+    justify-content: space-between;
+}
+.crousel-playist{
+    position: relative;
+    width: 32%;
+    height: 80%;
+    /* border: 2px solid white; */
+    margin-top: 23px;
+}
+.crousel-playist img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.c-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    background-color: rgb(46, 43, 43);
+}
+.crousel-icon{
+    display: none;
+    color: white;
+    font-size: 110px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.crousel-playist:hover{
+    position: relative;
+    bottom: 3rem;
+    width: 20rem;
+    height: 17rem;
+    z-index: 6 ;
+}
+.crousel-playist:hover .c-overlay{
+    opacity: 0.5;
+}
+
+/* ------------------for popular artist ---------------*/
+.popular-artist{
+    position: relative;
+    width: 108%;
+    height: 15rem;
+    /* border: 2px solid white; */
+    display: block;
+    margin-bottom: 2rem;
+}
+.artist-block{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    margin: 3px 2px 0px;
+    /* border: 2px solid white; */
+}
+.artist{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    margin: 7px 6px 0px;
+}
+.artist img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.p-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    background-color: rgb(46, 43, 43);
+}
+.artist:hover .p-overlay{
+    opacity: 0.5    ;
+}
+
+/*---------------------- radio station-------------------*/
+
+.radio-station{
+    position: relative;
+    width: 100%;
+    height: 11rem;
+    /* border: 3px solid white; */
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    background-color: #040c56;
+    display: flex;
+    justify-content: space-around;
+}
+.radio{
+    position: relative;
+    width: 12%;
+    height:60%;
+    /* border: 3px solid red; */
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.r-imgs img{
+    position: relative;
+    width: 100%;
+    height: 10rem;
+}
+.r-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    background-color: rgb(46, 43, 43);
+}
+.r-name{
+    color: white;
+    position: absolute;
+    top: 27%;
+    left: 15%;
+    font-size: 31px;
+    font-family: cursive;
+    opacity: 1;
+}
+.r-imgs:hover .r-overlay{
+    opacity: 0.3;
+}
+.r-img img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.r-img:hover .r-overlay{
+    opacity: 0.3;
+}
+.r-img:hover{
+    box-shadow: -4px -2px 15px grey;
+    border-radius: 50%;
+}
+
+/* -------------------------ocational music -----------------*/
+.ocational{
+    position: relative;
+    width: 100%;
+    height: 14rem;
+    /* border: 3px solid white; */
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.ocational-block{
+    position: relative;
+    width: 32%;
+    height: 100%;
+    overflow: hidden;
+    /* border: 3px solid red; */
+}
+.ocational-block img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.ocational-block img:hover {
+    transform: scale(1.5);
+    transition: all;
+    transition-duration: 0.3s;
+    opacity: 0.3;
+    transition-timing-function: ease-in-out;
+  }  
+/* .o-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    background-color: black;
+}
+
+
+.ocational-block:hover .o-overlay{
+    opacity: 0.3;
+} */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 214%;
+    font-family: cursive;
+}
+
+/*--------------------------latest english songs--------------*/
+.latest-eng{
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    margin-top: 10px;
+    /* border: 3px solid white; */
+}
+.le-block{
+    position: relative;
+    width: 100%;
+    height: 82%;
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.le-box{
+    position: relative;
+    width: 15%;
+    height: 100%;
+    /* border: 3px solid green; */
+}
+.le-img{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    /* border: 3px solid white; */
+}
+.le-img img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.le-name{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    /* border: 3px solid pink; */
+    color: white;
+    font-family: cursive;
+}
+.le-name:hover{
+    color: gray;
+    text-decoration: underline;
+}
+.le-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    background-color: black;
+}
+.le-img:hover .le-overlay{
+    opacity: 0.3;
+}
+.le-icon{
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+/*-------------------------------- play bar--------------------------- */
+.play-bar {
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    background-color: #4e4b4b;
+    display: flex;
+    z-index: 2;
+    bottom: 0;
+}
+.play-img{
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    /* border: 2px solid red; */
+    margin-left: 3rem;
+    margin-top: 13px;
+}
+.play-img img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.play-name{
+    height: 4rem;
+    width: 5rem;
+    color: white;
+    /* border: 2px solid red; */
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    font-size: 20px;
+    font-family: emoji;
+}
+.play-icon{
+    color: white;
+    margin-top: 1.8rem;
+    font-size: 20px;
+}
+.mid-play {
+    position: relative;
+    width: 40rem;
+    height: 100%;
+    /* border: 2px solid red; */
+    left: 15rem;
+}
+.mid-icon{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.mid-range{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    /* border: 3px solid green; */
+    margin-top: 20px;
+}
+.slider {
+    width: 100%;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  .last-play{
+    position: relative;
+    width: 26rem;
+    height: 100%;
+    left: 23rem;
+    /* border: 2px solid green; */
+    display: flex;
+  }
